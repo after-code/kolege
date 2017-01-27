@@ -1,0 +1,19 @@
+{
+  "name": "kolege",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "slick-carousel": "^1.6.0",
+    "velocity": "^1.4.1"
+  }
+}
