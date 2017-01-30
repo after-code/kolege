@@ -2,9 +2,11 @@ $(function(){
   $(".b-hp-slider").slick({
        speed: 600,
        fade: true,
-       autoplay: true,
+      //  autoplay: true,
        autoplaySpeed:3000,
-       dots:true
+       prevArrow:"<div class='arr-left arr slick-prev'><img class='a-left control-c prev ' src='assets/img/arrow.svg'></div>",
+       nextArrow:"<div class='arr-right arr slick-next'><img class='a-right control-c next ' src='assets/img/arrow.svg'></div>"
+      //  dots:true
   });
 
   $svg = $(".header__logo");
@@ -65,6 +67,6 @@ function start(){
 
 }
 
-  setTimeout(start, 1000);
+  // setTimeout(start, 1000);
 
 });
