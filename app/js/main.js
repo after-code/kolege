@@ -68,5 +68,8 @@ function start(){
 }
 
   // setTimeout(start, 1000);
-
+  $(".nav-ico").click(function(){
+    $(".page--mobile-about").toggleClass("active");
+    $(".page").toggleClass("active");
+  });
 });

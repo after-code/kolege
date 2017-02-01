@@ -100,19 +100,70 @@ body {
   font-family: 'Press';
   src: url(../../assets/font/PressStart2P.ttf); }
 
+.page--mobile-about {
+  display: none; }
+  @media (max-width: 700px) {
+    .page--mobile-about {
+      display: block;
+      background: #0e1364;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: -100%;
+      z-index: 6;
+      transition: left 200ms; }
+      .page--mobile-about.active {
+        left: 0; } }
+  .page--mobile-about .all, .page--mobile-about .k {
+    fill: white !important; }
+  .page--mobile-about .header {
+    background: white; }
+  .page--mobile-about .nav-ico {
+    background-image: url(../../assets/img/close-ico.svg); }
+  .page--mobile-about h1 {
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 60px;
+    font-weight: bold; }
+
+.page {
+  transition: all 200ms;
+  position: relative;
+  left: 0; }
+  @media (max-width: 700px) {
+    .page.active {
+      left: 40%; } }
+
 .header {
   width: 100%;
   height: 14vh;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  text-align: center; }
+  text-align: center;
+  background: rgba(255, 255, 255, 0.93); }
+  @media (max-width: 700px) {
+    .header {
+      height: 87px; } }
 
 .header__logo {
   width: 11%;
-  bottom: 1%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  bottom: 3%; }
+  @media (max-width: 700px) {
+    .header__logo {
+      float: left;
+      left: auto;
+      transform: none;
+      position: relative;
+      width: 132px;
+      margin-left: 14px;
+      margin-top: 21px; } }
 
 .header__nav {
   float: right;
@@ -120,10 +171,35 @@ body {
   position: absolute;
   bottom: 0;
   right: 0; }
+  @media (max-width: 700px) {
+    .header__nav {
+      width: 100%;
+      position: relative;
+      max-height: 0;
+      overflow: hidden; } }
+
+.nav-ico {
+  display: none;
+  height: 60px;
+  width: 60px;
+  background-image: url(../../assets/img/menu-ico.svg);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 11px;
+  right: 0; }
+  @media (max-width: 700px) {
+    .nav-ico {
+      display: block; } }
 
 .header__nav__item {
   display: inline-block;
   margin: 20px; }
+  @media (max-width: 700px) {
+    .header__nav__item {
+      display: block;
+      width: 100%; } }
 
 .o-back {
   fill: white;
@@ -163,36 +239,53 @@ body {
 
 .b-hp-slider {
   width: 100%;
-  height: 86vh;
+  height: 100vh;
   position: fixed;
   z-index: 1;
   overflow: hidden; }
 
-.b-hp-slider__item {
+div.b-hp-slider__item {
   width: 100%;
-  height: 100vh; }
-  .b-hp-slider__item img {
-    width: 100vw; }
+  height: 100vh;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.img01 {
+  background-image: url(../../assets/img/14.jpg);
+  background-size: 100%; }
+
+.img02 {
+  background-image: url(../../assets/img/12.jpg);
+  background-size: 100%; }
+
+.img03 {
+  background-image: url(../../assets/img/03.jpg);
+  background-size: 100%; }
+
+.img04 {
+  background-image: url(../../assets/img/15.jpg);
+  background-size: 100%; }
 
 .slick-arrow {
   position: absolute;
   opacity: 0.5;
   z-index: 2;
   width: 60px;
-  width: 10%;
-  background: #222; }
+  width: 30%; }
   .slick-arrow img {
-    width: 70px;
+    width: 50px;
     top: 50%;
     position: relative; }
 
 .a-left {
-  margin-left: 13%;
+  margin-left: 7%;
   transform: rotate(180deg); }
 
 .a-right {
   float: right;
-  margin-right: 13%; }
+  margin-right: 7%; }
 
 .slick-next {
   left: auto;
@@ -212,3 +305,41 @@ body {
   .slick-dots li {
     display: inline-block;
     margin: 5px; }
+
+.arr-right {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 800ms;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,000000+100&0+0,1+100 */
+  background: -moz-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #1e1e1e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0%, #1e1e1e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(30, 87, 153, 0) 0%, #1e1e1e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000000',GradientType=1 );
+  /* IE6-9 */ }
+  .arr-right:hover {
+    opacity: 1; }
+  @media (max-width: 700px) {
+    .arr-right {
+      display: none !important; } }
+
+.arr-left {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 800ms;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,000000+100&0+0,1+100 */
+  background: -moz-linear-gradient(left, #1e1e1e 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #1e1e1e 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #1e1e1e 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#000000',GradientType=1 );
+  /* IE6-9 */ }
+  .arr-left:hover {
+    opacity: 1; }
+  @media (max-width: 700px) {
+    .arr-left {
+      display: none !important; } }
