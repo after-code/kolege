@@ -68,8 +68,25 @@ function start(){
 }
 
   // setTimeout(start, 1000);
+  $(".about").click(function(){
+    $(".page--mobile-about").addClass("active");
+    $(".page").addClass("active");
+    // $(".header__nav").toggleClass("active");
+  });
+  $(".contact").click(function(){
+    $(".page--mobile-contact").addClass("active-contact");
+    $(".page").addClass("active-contact");
+    // $(".header__nav").toggleClass("active");
+  });
   $(".nav-ico").click(function(){
-    $(".page--mobile-about").toggleClass("active");
-    $(".page").toggleClass("active");
+    $(".header__nav").toggleClass("active");
+  });
+  $(".close-ico").click(function(){
+    $(".page--mobile-about").removeClass("active");
+    $(".page").removeClass("active");
+  });
+  $(".close-contact").click(function(){
+    $(".page--mobile-contact").removeClass("active-contact");
+    $(".page").removeClass("active-contact");
   });
 });

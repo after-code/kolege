@@ -105,7 +105,7 @@ body {
   @media (max-width: 700px) {
     .page--mobile-about {
       display: block;
-      background: #0e1364;
+      background: #f0c4d1;
       position: fixed;
       height: 100vh;
       width: 100%;
@@ -118,8 +118,8 @@ body {
   .page--mobile-about .all, .page--mobile-about .k {
     fill: white !important; }
   .page--mobile-about .header {
-    background: white; }
-  .page--mobile-about .nav-ico {
+    background: none; }
+  .page--mobile-about .nav-ico, .page--mobile-about .close-ico {
     background-image: url(../../assets/img/close-ico.svg); }
   .page--mobile-about h1 {
     position: fixed;
@@ -136,7 +136,25 @@ body {
   left: 0; }
   @media (max-width: 700px) {
     .page.active {
-      left: 40%; } }
+      left: 40%; }
+    .page.active-contact {
+      left: -40%; } }
+
+.page--mobile-contact {
+  display: none; }
+  @media (max-width: 700px) {
+    .page--mobile-contact {
+      display: block;
+      background: white;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 100%;
+      z-index: 6;
+      transition: left 200ms; }
+      .page--mobile-contact.active-contact {
+        left: 0; } }
 
 .header {
   width: 100%;
@@ -144,10 +162,10 @@ body {
   position: absolute;
   z-index: 2;
   text-align: center;
-  background: rgba(255, 255, 255, 0.93); }
+  background: white; }
   @media (max-width: 700px) {
     .header {
-      height: 87px; } }
+      height: 80px; } }
 
 .header__logo {
   width: 11%;
@@ -175,10 +193,17 @@ body {
     .header__nav {
       width: 100%;
       position: relative;
+      margin-top: 13px;
       max-height: 0;
-      overflow: hidden; } }
+      overflow: hidden;
+      background: white;
+      width: 100%;
+      margin-right: 0;
+      transition: all 400ms; }
+      .header__nav.active {
+        max-height: 130px; } }
 
-.nav-ico {
+.nav-ico, .close-ico {
   display: none;
   height: 60px;
   width: 60px;
@@ -190,16 +215,25 @@ body {
   margin-top: 11px;
   right: 0; }
   @media (max-width: 700px) {
-    .nav-ico {
+    .nav-ico, .close-ico {
       display: block; } }
+
+.close-ico {
+  background-image: url(../../assets/img/close-ico.svg); }
 
 .header__nav__item {
   display: inline-block;
-  margin: 20px; }
+  margin: 20px;
+  font-weight: 100;
+  letter-spacing: 2px; }
   @media (max-width: 700px) {
     .header__nav__item {
       display: block;
       width: 100%; } }
+  @media (max-width: 700px) and (max-width: 700px) {
+    .header__nav__item {
+      margin: 0;
+      padding: 17px 0; } }
 
 .o-back {
   fill: white;
@@ -343,3 +377,16 @@ div.b-hp-slider__item {
   @media (max-width: 700px) {
     .arr-left {
       display: none !important; } }
+
+.b-contact {
+  width: 44%;
+  color: #222;
+  top: 37%;
+  position: relative;
+  margin: 0 auto; }
+  .b-contact h3 {
+    font-size: 23px;
+    margin-bottom: 32px; }
+  .b-contact p {
+    font-size: 16px;
+    margin-bottom: 10px; }

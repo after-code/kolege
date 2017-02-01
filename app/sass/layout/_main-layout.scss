@@ -2,7 +2,7 @@
   display: none;
   @include breakpoint(mobile) {
     display: block;
-    background: #0e1364;
+    background: #f0c4d1;
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -18,7 +18,7 @@
     fill:white !important;
   }
   .header {
-    background: white;
+    background: none;
   }
   .nav-ico {
     background-image: url(../../assets/img/close-ico.svg);
@@ -41,6 +41,26 @@
 
     &.active {
       left:40%;
+    }
+    &.active-contact {
+      left:-40%;
+    }
+  }
+}
+.page--mobile-contact {
+  display: none;
+  @include breakpoint(mobile) {
+    display: block;
+    background: white;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left:100%;
+    z-index: 6;
+    transition: left 200ms;
+    &.active-contact {
+      left:0;
     }
   }
 }

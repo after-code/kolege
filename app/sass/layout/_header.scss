@@ -5,9 +5,9 @@
   z-index: 2;
   text-align: center;
 
-  background: rgba(255,255,255,0.93);
+  background: rgba(255,255,255,1);
   @include breakpoint(mobile) {
-    height: 87px;
+    height: 80px;
   }
 }
 .header__logo {
@@ -30,13 +30,22 @@
   float:right;
   margin-right: 20px;
   position: absolute;
+
   bottom: 0;
   right: 0;
   @include breakpoint(mobile) {
     width: 100%;
     position: relative;
+    margin-top: 13px;
     max-height: 0;
     overflow: hidden;
+    background: rgba(255,255,255,1);
+    width: 100%;
+    margin-right: 0;
+    transition:all 400ms;
+    &.active {
+      max-height: 130px;
+    }
   }
 }
 .nav-ico {
@@ -54,12 +63,22 @@
     display:block;
    }
 }
+.close-ico {
+  @extend .nav-ico;
+  background-image: url(../../assets/img/close-ico.svg);
+}
 .header__nav__item {
   display: inline-block;
   margin:20px;
+  font-weight: 100;
+  letter-spacing: 2px;
   @include breakpoint(mobile) {
     display: block;
     width: 100%;
+    @include breakpoint(mobile){
+      margin: 0;
+      padding: 17px 0;
+    }
   }
 }
 // svg logo animation
