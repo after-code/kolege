@@ -30,7 +30,6 @@
     width: 100%;
     color: white;
     font-size: 60px;
-    font-weight: bold;
   }
 }
 .page {
@@ -38,7 +37,6 @@
     position: relative;
     left:0;
   @include breakpoint(mobile) {
-
     &.active {
       left:40%;
     }

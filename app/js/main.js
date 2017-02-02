@@ -5,8 +5,15 @@ $(function(){
       //  autoplay: true,
        autoplaySpeed:3000,
        prevArrow:"<div class='arr-left arr slick-prev'><img class='a-left control-c prev ' src='assets/img/arrow.svg'></div>",
-       nextArrow:"<div class='arr-right arr slick-next'><img class='a-right control-c next ' src='assets/img/arrow.svg'></div>"
-      //  dots:true
+       nextArrow:"<div class='arr-right arr slick-next'><img class='a-right control-c next ' src='assets/img/arrow.svg'></div>",
+       responsive: [
+         {
+           breakpoint: 1024,
+           settings: {
+             fade: false
+           }
+         }
+       ]
   });
 
   $svg = $(".header__logo");
@@ -68,25 +75,34 @@ function start(){
 }
 
   // setTimeout(start, 1000);
-  $(".about").click(function(){
-    $(".page--mobile-about").addClass("active");
-    $(".page").addClass("active");
-    // $(".header__nav").toggleClass("active");
-  });
-  $(".contact").click(function(){
-    $(".page--mobile-contact").addClass("active-contact");
-    $(".page").addClass("active-contact");
-    // $(".header__nav").toggleClass("active");
-  });
-  $(".nav-ico").click(function(){
-    $(".header__nav").toggleClass("active");
-  });
-  $(".close-ico").click(function(){
-    $(".page--mobile-about").removeClass("active");
-    $(".page").removeClass("active");
-  });
-  $(".close-contact").click(function(){
-    $(".page--mobile-contact").removeClass("active-contact");
-    $(".page").removeClass("active-contact");
-  });
+  if($(window).width()<1024){
+    if(!$("body").hasClass('about-page')){
+      $(".about").click(function(e){
+        e.preventDefault();
+        $(".page--mobile-about").addClass("active");
+        $(".page").addClass("active");
+        // $(".header__nav").toggleClass("active");
+      });
+    }
+    if(!$("body").hasClass('contact-page')){
+      $(".contact").click(function(e){
+        e.preventDefault();
+        $(".page--mobile-contact").addClass("active-contact");
+        $(".page").addClass("active-contact");
+        // $(".header__nav").toggleClass("active");
+      });
+    }
+    $(".nav-ico").click(function(){
+      $(".header__nav").toggleClass("active");
+    });
+    $(".close-ico").click(function(){
+      $(".page--mobile-about").removeClass("active");
+      $(".page").removeClass("active");
+    });
+    $(".close-contact").click(function(){
+      $(".page--mobile-contact").removeClass("active-contact");
+      $(".page").removeClass("active-contact");
+    });
+  }
+
 });

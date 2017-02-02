@@ -4,6 +4,7 @@
 @import 'base/mixins';
 @import 'base/typography';
 @import 'base/init';
+@import 'base/headings';
 
 @import 'layout/main-layout';
 @import 'layout/sections';
@@ -11,3 +12,6 @@
 
 @import 'blocks/b-hp-slider';
 @import 'blocks/b-contact';
+
+@import 'pages/about-page';
+@import 'pages/contact-page';
