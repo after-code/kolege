@@ -162,6 +162,10 @@ h1 {
       margin-left: 14px;
       margin-top: 21px; } }
 
+.header__logo--anim {
+  z-index: 12;
+  position: relative; }
+
 .header__nav {
   float: right;
   margin-right: 20px;
@@ -217,14 +221,10 @@ h1 {
 
 .header__animation {
   width: 100%;
-  height: 100vh; }
-
-.o-back {
-  fill: white;
-  opacity: 1; }
-
-.o-front {
-  fill: #222; }
+  height: 100vh;
+  background: white;
+  z-index: 10;
+  position: relative; }
 
 .o {
   transform: translateX(-400px); }
@@ -244,6 +244,7 @@ h1 {
   bottom: 0;
   fill: #222;
   position: fixed;
+  z-index: 0;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%); }
