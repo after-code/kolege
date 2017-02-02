@@ -16,7 +16,7 @@ $(function(){
        ]
   });
 
-  $svg = $(".header__logo");
+  $svg = $(".header__logo--anim");
 
   $o = $(".o");
   $o_back = $(".o-back");
@@ -104,5 +104,5 @@ function start(){
       $(".page").removeClass("active-contact");
     });
   }
-
+  start();
 });
