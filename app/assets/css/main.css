@@ -164,7 +164,8 @@ h1 {
 
 .header__logo--anim {
   z-index: 12;
-  position: relative; }
+  position: relative;
+  transform: scale(0.8); }
 
 .header__nav {
   float: right;
@@ -227,7 +228,8 @@ h1 {
   position: relative; }
 
 .o {
-  transform: translateX(-400px); }
+  transform: translateX(-400px);
+  opacity: 0; }
 
 .other {
   opacity: 0;
@@ -236,7 +238,8 @@ h1 {
   transform-origin: center; }
 
 .k {
-  opacity: 0; }
+  opacity: 0;
+  fill: #fff; }
 
 .header__logo__background {
   width: 100%;
