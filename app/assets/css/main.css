@@ -92,7 +92,7 @@ h1 {
       top: 0;
       left: -100%;
       z-index: 6;
-      transition: left 200ms; }
+      transition: left 300ms; }
       .page--mobile-about.active {
         left: 0; } }
   .page--mobile-about .all, .page--mobile-about .k {
@@ -103,14 +103,14 @@ h1 {
     background-image: url(../../assets/img/close-ico.svg); }
   .page--mobile-about h1 {
     position: fixed;
-    top: 50%;
+    top: 42%;
     text-align: center;
     width: 100%;
     color: white;
-    font-size: 60px; }
+    font-size: 66px; }
 
 .page {
-  transition: all 200ms;
+  transition: all 300ms;
   position: relative;
   left: 0; }
   @media (max-width: 700px) {
@@ -131,7 +131,7 @@ h1 {
       top: 0;
       left: 100%;
       z-index: 6;
-      transition: left 200ms; }
+      transition: left 300ms; }
       .page--mobile-contact.active-contact {
         left: 0; } }
 
@@ -151,7 +151,8 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 3%; }
+  margin-bottom: 19px;
+  bottom: 0; }
   @media (max-width: 700px) {
     .header__logo {
       float: left;
@@ -177,7 +178,7 @@ h1 {
     .header__nav {
       width: 100%;
       position: relative;
-      margin-top: 13px;
+      margin-top: -1px;
       max-height: 0;
       overflow: hidden;
       background: white;
@@ -186,8 +187,6 @@ h1 {
       transition: all 400ms; }
       .header__nav.active {
         max-height: 130px; } }
-  .header__nav > li:last-child {
-    margin-bottom: 10px; }
 
 .nav-ico, .close-ico {
   display: none;
@@ -210,6 +209,7 @@ h1 {
 .header__nav__item {
   display: inline-block;
   margin: 20px;
+  margin-bottom: 30px;
   letter-spacing: 1px; }
   @media (max-width: 700px) {
     .header__nav__item {
@@ -221,6 +221,7 @@ h1 {
       padding: 17px 0; } }
 
 .header__animation {
+  display: none;
   width: 100%;
   height: 100vh;
   background: white;
@@ -247,6 +248,7 @@ h1 {
   bottom: 0;
   fill: #222;
   position: fixed;
+  display: none;
   z-index: 0;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
@@ -281,20 +283,123 @@ div.b-hp-slider__item {
   background-position: center; }
 
 .img01 {
-  background-image: url(../../assets/img/14.jpg);
+  background-image: url(../../assets/img/background/desk/f01.jpg);
   background-size: 100%; }
+  @media (max-width: 700px) {
+    .img01 {
+      background-image: url(../../assets/img/background/mobile/mf01.jpg); } }
 
 .img02 {
-  background-image: url(../../assets/img/12.jpg);
+  background-image: url(../../assets/img/background/desk/f02.jpg);
   background-size: 100%; }
+  @media (max-width: 700px) {
+    .img02 {
+      background-image: url(../../assets/img/background/mobile/mf02.jpg); } }
 
 .img03 {
-  background-image: url(../../assets/img/03.jpg);
+  background-image: url(../../assets/img/background/desk/f03.jpg);
   background-size: 100%; }
+  @media (max-width: 700px) {
+    .img03 {
+      background-image: url(../../assets/img/background/mobile/mf03.jpg); } }
 
 .img04 {
-  background-image: url(../../assets/img/15.jpg);
+  background-image: url(../../assets/img/background/desk/f04.jpg);
   background-size: 100%; }
+  @media (max-width: 700px) {
+    .img04 {
+      background-image: url(../../assets/img/background/mobile/mf04.jpg); } }
+
+.img05 {
+  background-image: url(../../assets/img/background/desk/f05.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img05 {
+      background-image: url(../../assets/img/background/mobile/mf05.jpg); } }
+
+.img06 {
+  background-image: url(../../assets/img/background/desk/f06.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img06 {
+      background-image: url(../../assets/img/background/mobile/mf06.jpg); } }
+
+.img07 {
+  background-image: url(../../assets/img/background/desk/f07.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img07 {
+      background-image: url(../../assets/img/background/mobile/mf07.jpg); } }
+
+.img08 {
+  background-image: url(../../assets/img/background/desk/f08.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img08 {
+      background-image: url(../../assets/img/background/mobile/mf08.jpg); } }
+
+.img09 {
+  background-image: url(../../assets/img/background/desk/f09.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img09 {
+      background-image: url(../../assets/img/background/mobile/mf09.jpg); } }
+
+.img10 {
+  background-image: url(../../assets/img/background/desk/f10.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img10 {
+      background-image: url(../../assets/img/background/mobile/mf10.jpg); } }
+
+.img11 {
+  background-image: url(../../assets/img/background/desk/f11.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img11 {
+      background-image: url(../../assets/img/background/mobile/mf11.jpg); } }
+
+.img12 {
+  background-image: url(../../assets/img/background/desk/f12.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img12 {
+      background-image: url(../../assets/img/background/mobile/mf12.jpg); } }
+
+.img13 {
+  background-image: url(../../assets/img/background/desk/f13.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img13 {
+      background-image: url(../../assets/img/background/mobile/mf13.jpg); } }
+
+.img14 {
+  background-image: url(../../assets/img/background/desk/f14.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img14 {
+      background-image: url(../../assets/img/background/mobile/mf14.jpg); } }
+
+.img15 {
+  background-image: url(../../assets/img/background/desk/f15.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img15 {
+      background-image: url(../../assets/img/background/mobile/mf15.jpg); } }
+
+.img16 {
+  background-image: url(../../assets/img/background/desk/f16.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img16 {
+      background-image: url(../../assets/img/background/mobile/mf16.jpg); } }
+
+.img17 {
+  background-image: url(../../assets/img/background/desk/f17.jpg);
+  background-size: 100%; }
+  @media (max-width: 700px) {
+    .img17 {
+      background-image: url(../../assets/img/background/mobile/mf17.jpg); } }
 
 .slick-arrow {
   position: absolute;
@@ -372,18 +477,36 @@ div.b-hp-slider__item {
     .arr-left {
       display: none !important; } }
 
+.slick-arrow {
+  opacity: 0; }
+
 .b-contact {
   width: 44%;
   color: #222;
   top: 37%;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center; }
+  .b-contact img {
+    width: 46%;
+    position: relative;
+    margin-bottom: 104px; }
   .b-contact h3 {
     font-size: 23px;
-    margin-bottom: 32px; }
+    margin-bottom: 25px; }
   .b-contact p {
     font-size: 16px;
     margin-bottom: 10px; }
+
+.b-contact__left {
+  width: 50%;
+  float: left;
+  clear: both; }
+
+.b-contact__right {
+  width: 50%;
+  float: left; }
 
 .about-page {
   background: #f0c4d1; }
@@ -393,17 +516,26 @@ div.b-hp-slider__item {
     height: 100vh; }
     .about-page .page h1 {
       text-align: center;
-      font-size: 80px;
+      font-size: 11vw;
       color: white;
-      top: 50%;
+      top: 46%;
       position: relative;
       transform: translateY(-50%); }
+      @media (max-width: 700px) {
+        .about-page .page h1 {
+          position: fixed;
+          top: 42%;
+          text-align: center;
+          width: 100%;
+          color: white;
+          font-size: 66px; } }
   .about-page .header {
     background: transparent; }
 
 .contact-page .b-contact {
   top: 30%;
-  position: relative; }
+  position: relative;
+  width: 310px; }
 
 .contact-page .page {
   height: 100vh; }

@@ -9,7 +9,7 @@
     top:0;
     left:-100%;
     z-index: 6;
-    transition: left 200ms;
+    transition: left 300ms;
     &.active {
       left:0;
     }
@@ -25,15 +25,15 @@
   }
   h1 {
     position: fixed;
-    top: 50%;
+    top: 42%;
     text-align: center;
     width: 100%;
     color: white;
-    font-size: 60px;
+    font-size: 66px;
   }
 }
 .page {
-    transition: all 200ms;
+    transition: all 300ms;
     position: relative;
     left:0;
   @include breakpoint(mobile) {
@@ -56,7 +56,7 @@
     top:0;
     left:100%;
     z-index: 6;
-    transition: left 200ms;
+    transition: left 300ms;
     &.active-contact {
       left:0;
     }

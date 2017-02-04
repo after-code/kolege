@@ -116,5 +116,8 @@ function start(){
       $(".page").removeClass("active-contact");
     });
   }
-  setTimeout(start,300);
+  // setTimeout(start,300);
+  setTimeout(function(){
+    $(".slick-arrow").velocity({opacity:"1"},300);
+  },1000)
 });

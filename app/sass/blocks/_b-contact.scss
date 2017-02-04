@@ -4,12 +4,29 @@
   top: 37%;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+
+  img {
+    width: 46%;
+    position: relative;
+    margin-bottom: 104px;
+  }
   h3 {
     font-size: 23px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
   }
   p {
     font-size: 16px;
     margin-bottom: 10px;
   }
+}
+.b-contact__left {
+  width: 50%;
+  float: left;
+  clear:both;
+}
+.b-contact__right {
+  width: 50%;
+  float: left;
 }

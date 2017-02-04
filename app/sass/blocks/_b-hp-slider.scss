@@ -15,20 +15,123 @@ div.b-hp-slider__item {
   background-position: center;
 }
 .img01 {
-  background-image:url(../../assets/img/14.jpg);
+  background-image:url(../../assets/img/background/desk/f01.jpg);
   background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf01.jpg);
+  }
 }
 .img02 {
-  background-image:url(../../assets/img/12.jpg);
+  background-image:url(../../assets/img/background/desk/f02.jpg);
   background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf02.jpg);
+  }
 }
 .img03 {
-  background-image:url(../../assets/img/03.jpg);
+  background-image:url(../../assets/img/background/desk/f03.jpg);
   background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf03.jpg);
+  }
 }
 .img04 {
-  background-image:url(../../assets/img/15.jpg);
+  background-image:url(../../assets/img/background/desk/f04.jpg);
   background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf04.jpg);
+  }
+}
+.img05 {
+  background-image:url(../../assets/img/background/desk/f05.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf05.jpg);
+  }
+}
+.img06 {
+  background-image:url(../../assets/img/background/desk/f06.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf06.jpg);
+  }
+}
+.img07 {
+  background-image:url(../../assets/img/background/desk/f07.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf07.jpg);
+  }
+}
+.img08 {
+  background-image:url(../../assets/img/background/desk/f08.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf08.jpg);
+  }
+}
+.img09 {
+  background-image:url(../../assets/img/background/desk/f09.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf09.jpg);
+  }
+}
+.img10 {
+  background-image:url(../../assets/img/background/desk/f10.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf10.jpg);
+  }
+}
+.img11 {
+  background-image:url(../../assets/img/background/desk/f11.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf11.jpg);
+  }
+}
+.img12 {
+  background-image:url(../../assets/img/background/desk/f12.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf12.jpg);
+  }
+}
+.img13 {
+  background-image:url(../../assets/img/background/desk/f13.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf13.jpg);
+  }
+}
+.img14 {
+  background-image:url(../../assets/img/background/desk/f14.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf14.jpg);
+  }
+}
+.img15 {
+  background-image:url(../../assets/img/background/desk/f15.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf15.jpg);
+  }
+}
+.img16 {
+  background-image:url(../../assets/img/background/desk/f16.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf16.jpg);
+  }
+}
+.img17 {
+  background-image:url(../../assets/img/background/desk/f17.jpg);
+  background-size:100%;
+  @include breakpoint(mobile){
+    background-image:url(../../assets/img/background/mobile/mf17.jpg);
+  }
 }
 .slick-arrow {
   position: absolute;
@@ -106,4 +209,7 @@ div.b-hp-slider__item {
   @include breakpoint(mobile) {
     display:none !important;
   }
+}
+.slick-arrow {
+  opacity: 0;
 }
