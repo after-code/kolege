@@ -487,7 +487,8 @@ div.b-hp-slider__item {
   position: relative;
   margin: 0 auto;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  width: 310px; }
   .b-contact img {
     width: 46%;
     position: relative;
