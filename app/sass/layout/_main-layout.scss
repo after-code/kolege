@@ -30,6 +30,9 @@
     width: 100%;
     color: white;
     font-size: 66px;
+    @include breakpoint(mobile) {
+      font-size:17.3vw
+    }
   }
 }
 .page {

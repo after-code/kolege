@@ -1,16 +1,19 @@
 $(function(){
   $(".b-hp-slider").slick({
-       speed: 600,
+       speed: 1500,
        fade: true,
-      //  autoplay: true,
-       autoplaySpeed:3000,
+       autoplay: true,
+       pauseOnHover: false,
+       pauseOnFocus: false,
+       autoplaySpeed:5000,
        prevArrow:"<div class='arr-left arr slick-prev'><img class='a-left control-c prev ' src='assets/img/arrow.svg'></div>",
        nextArrow:"<div class='arr-right arr slick-next'><img class='a-right control-c next ' src='assets/img/arrow.svg'></div>",
        responsive: [
          {
            breakpoint: 1024,
            settings: {
-             fade: false
+             fade: false,
+             speed: 600,
            }
          }
        ]
@@ -118,6 +121,6 @@ function start(){
   }
   // setTimeout(start,300);
   setTimeout(function(){
-    $(".slick-arrow").velocity({opacity:"1"},300);
+    // $(".slick-arrow").velocity({opacity:"0.5"},300);
   },1000)
 });

@@ -108,6 +108,9 @@ h1 {
     width: 100%;
     color: white;
     font-size: 66px; }
+    @media (max-width: 700px) {
+      .page--mobile-about h1 {
+        font-size: 17.3vw; } }
 
 .page {
   transition: all 300ms;
@@ -489,10 +492,22 @@ div.b-hp-slider__item {
   overflow: hidden;
   text-align: center;
   width: 310px; }
+  @media (max-height: 480px) {
+    .b-contact {
+      top: 22%; } }
+  @media (max-height: 568px) {
+    .b-contact {
+      top: 25%; } }
   .b-contact img {
     width: 46%;
     position: relative;
     margin-bottom: 104px; }
+    @media (max-height: 480px) {
+      .b-contact img {
+        margin-bottom: 11%; } }
+    @media (max-height: 568px) {
+      .b-contact img {
+        margin-bottom: 13%; } }
   .b-contact h3 {
     font-size: 23px;
     margin-bottom: 25px; }
@@ -529,7 +544,7 @@ div.b-hp-slider__item {
           text-align: center;
           width: 100%;
           color: white;
-          font-size: 66px; } }
+          font-size: 17.3vw; } }
   .about-page .header {
     background: transparent; }
 

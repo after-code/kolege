@@ -7,10 +7,22 @@
   overflow: hidden;
   text-align: center;
   width: 310px;
+  @include breakpoint(iphone4) {
+    top: 22%;
+  }
+  @include breakpoint(iphone5) {
+    top: 25%;
+  }
   img {
     width: 46%;
     position: relative;
     margin-bottom: 104px;
+    @include breakpoint(iphone4) {
+      margin-bottom: 11%;
+    }
+    @include breakpoint(iphone5) {
+      margin-bottom: 13%;
+    }
   }
   h3 {
     font-size: 23px;
