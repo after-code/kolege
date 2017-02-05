@@ -417,6 +417,9 @@ div.b-hp-slider__item {
 
 .a-left {
   margin-left: 7%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .a-right {
@@ -457,9 +460,6 @@ div.b-hp-slider__item {
   /* IE6-9 */ }
   .arr-right:hover {
     opacity: 1; }
-  @media (max-width: 700px) {
-    .arr-right {
-      display: none !important; } }
 
 .arr-left {
   cursor: pointer;
@@ -476,12 +476,6 @@ div.b-hp-slider__item {
   /* IE6-9 */ }
   .arr-left:hover {
     opacity: 1; }
-  @media (max-width: 700px) {
-    .arr-left {
-      display: none !important; } }
-
-.slick-arrow {
-  opacity: 0; }
 
 .b-contact {
   width: 44%;

@@ -14,6 +14,7 @@ $(function(){
            settings: {
              fade: false,
              speed: 600,
+             arrows: false
            }
          }
        ]
