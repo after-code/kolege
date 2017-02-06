@@ -110,6 +110,7 @@ function start(){
     }
     $(".nav-ico").click(function(){
       $(".header__nav").toggleClass("active");
+      $(".nav-ico").toggleClass("active");
     });
     $(".close-ico").click(function(){
       $(".page--mobile-about").removeClass("active");

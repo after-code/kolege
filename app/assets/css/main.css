@@ -101,6 +101,9 @@ h1 {
     background: none; }
   .page--mobile-about .nav-ico, .page--mobile-about .close-ico {
     background-image: url(../../assets/img/close-ico.svg); }
+  .page--mobile-about .close-ico {
+    background-image: url(../../assets/img/right.svg);
+    background-size: 24px; }
   .page--mobile-about h1 {
     position: fixed;
     top: 42%;
@@ -124,6 +127,9 @@ h1 {
 
 .page--mobile-contact {
   display: none; }
+  .page--mobile-contact .close-ico {
+    background-image: url(../../assets/img/left.svg);
+    background-size: 24px; }
   @media (max-width: 700px) {
     .page--mobile-contact {
       display: block;
@@ -137,6 +143,9 @@ h1 {
       transition: left 300ms; }
       .page--mobile-contact.active-contact {
         left: 0; } }
+
+.nav-ico.active, .active.close-ico {
+  background-image: url(../../assets/img/close-ico.svg); }
 
 .header {
   width: 100%;
