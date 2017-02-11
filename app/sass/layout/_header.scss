@@ -14,9 +14,9 @@
   width: 11%;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   margin-bottom: 19px;
-  bottom:0;
+  top:8vh;
   @include breakpoint(mobile) {
     float: left;
     left: auto;
@@ -30,8 +30,10 @@
 .header__logo--anim{
   z-index: 12;
   position: relative;
-  // width: 80%;
+  width: 100%;
   transform:scale(1);
+  top: 0vh;
+  transform-origin: top center;
   // left:10%;
 }
 .header__nav {
@@ -143,6 +145,7 @@
   transform:translateX(-100%);
   -webkit-transform:translateX(-100%);
   -ms-transform:translateX(-100%);
+  left: 0;
 }
 .mask {
   display: none;
