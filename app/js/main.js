@@ -35,62 +35,42 @@ $(function(){
   $slider = $(".b-hp-slider");
   $animation = $(".header__animation");
 function start(){
-  $o.velocity({translateX:["0px", "-200px"], opacity:'1'},900, [150,20]);
-  setTimeout(function(){$k.css({opacity:1})},300);
+  $o.velocity({translateX:["0px", "-200px"], opacity:'1'},1000, [150,20]);
+  setTimeout(function(){
+    $k.css({opacity:1});
+    $other.css({opacity:1});
+  },400);
   setTimeout(function(){
     // $other.velocity({"opacity":"1" }, 700);
     // $o_front.velocity({fill: "#222"}, 700);
     // $o_back.velocity({fill: "#ffffff"}, 700);
-    setTimeout(function(){$background.velocity({translateX: ["-63%","-100%"]}, 900, 'easeInOutCubic');},100);
+    setTimeout(function(){$background.velocity({translateX: ["0%","-100%"]},1100, [440,40]);},550);
     // setTimeout(function(){$svg.velocity({ scale:"0.1"}, 2000).velocity({ translateX:"-489%" , translateY:"-612%"},1000);},400);
     // setTimeout(function(){$o.velocity({ scale:"0.1"}, 2000).velocity({ translateX:"-489%" , translateY:"-612%"},2000);},100);
     // $background.velocity({opacity: 1}, 500 );
   },400);
   setTimeout(function(){
-    $other.velocity({"opacity":"1" , fill:"#fff"}, 700);
-    $o_front.velocity({fill: "#222"}, 700);
-    $o_back.velocity({fill: "#fff"}, 700);
-    setTimeout(function(){
-      $background.css({"transform-origin":"bottom right "});
-      $background.velocity({rotateZ: [90,0]}, 700,'easeInOutCubic', function(){
-        // $svg.css({"transform-origin":"35.8% 50%"})
-        // $svg.velocity({ scale: "0.24"},1200,'easeInOutCubic');
-        // $k.velocity({"fill":"#ffffff"},500);
-        $other.velocity({fill:"#222"}, 700, 'easeInOutCubic');
-        $background.velocity({translateX: ["-100%","-63%"]}, 700, 'easeInOutCubic');
-        setTimeout(function(){
-          $k.velocity({"fill":"#222"},300, function(){
-            // $k.velocity({"fill":"#fff"},1200);
-          });
-          // $o_back.css({"transform-origin":"center"});
-          // $o_back.velocity({"fill":"#222"},1500, 'easeInOutCubic');
-          // $all.velocity({"fill":"#ffffff"},1500, 'easeInOutCubic');
-          // $o_back.velocity({opacity:"0"},400);
-          $animation.css({"background":"transparent"});
-          $background.velocity({bottom:"100%"}, 1200, 'easeInOutCubic');
-
-        },700);
-        setTimeout(function(){
-          $svg.velocity({scale:["0.113", '0.8']},700, 'easeInOutCubic', function(){
-              $svg.velocity({translateY: "-297%"},700, 'easeInOutCubic', function(){});
-          });
-        },200)
-      });
-      $k.velocity({opacity:"1", fill:"#222"}, 700,[150,30]);
-    },100);
-    // setTimeout(function(){
-    //   $background.velocity({ height: "12vh"});
-    // },1000);
-    // $o_back.velocity({fill: "#ffffff"}, 700);
-    // setTimeout(function(){$background.velocity({translateX: ["-60%","-100%"]}, 900,[150,20]);},100);
-    // setTimeout(function(){$svg.velocity({ scale:"0.1"}, 2000).velocity({ translateX:"-489%" , translateY:"-612%"},1000);},400);
-    // setTimeout(function(){$o.velocity({ scale:"0.1"}, 2000).velocity({ translateX:"-489%" , translateY:"-612%"},2000);},100);
-    // $background.velocity({opacity: 1}, 500 );
-  },1200);
+    $svg.velocity({
+      width: "11.3%",
+      // left: "44.3%",
+      top:"7.7vh"
+    },1000, 'easeInOutCubic', function(){
+        // $svg.velocity({translateY: "-297%"},1000, 'easeInOutCubic', function(){});
+    });
+  },1500)
+  // setTimeout(function(){
+  //   $other.velocity({"opacity":"1" , fill:"#fff"}, 700);
+  //     $background.velocity({rotateZ: [0,0]}, 700,'easeInOutCubic', function(){
+  //       setTimeout(function(){
+  //         $animation.css({"background":"transparent"});
+  //         $background.velocity({bottom:"100%"}, 1200, 'easeInOutCubic');
+  //       },700);
+  //     });
+  // },1200);
 
 }
 
-  // setTimeout(start, 1000);
+  setTimeout(start, 1000);
   if($(window).width()<1024){
     if(!$("body").hasClass('about-page')){
       $(".about").click(function(e){
