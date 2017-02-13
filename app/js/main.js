@@ -41,9 +41,13 @@ function start(){
     $other.css({opacity:1});
   },400);
   // setTimeout(function(){
-    setTimeout(function(){$background.velocity({translateX: ["0%","-100%"]},1350, [250,30], function(){
+    setTimeout(function(){$background.velocity({translateX: ["0%","-110%"]},1250, [250,30], function(){
        $animation.css({background:"rgba(0,0,0,0)"});
-       $background.velocity({bottom:"-100%"}, 800, 'easeInOutCubic');
+      //  setTimeout(function(){
+         $background.velocity({translateX: ["-110%","0%"]},1250, [250,30], function(){
+           $animation.css({'display':"none"});
+         });
+      //  },100)
     });},940);
   // },400);
   // setTimeout(function(){
@@ -58,7 +62,7 @@ function start(){
     $svg.velocity({
       scale:"0.11",
       // left: "44.3%",
-      top:"7.7vh",
+      // top:"7.7vh",
       opacity:0.2,
 
     },1000, 'easeInOutCubic', function(){
@@ -70,7 +74,8 @@ function start(){
 
 }
 
-  setTimeout(start, 1000);
+
+
   if($(window).width()<1024){
     if(!$("body").hasClass('about-page')){
       $(".about").click(function(e){
@@ -100,6 +105,8 @@ function start(){
       $(".page--mobile-contact").removeClass("active-contact");
       $(".page").removeClass("active-contact");
     });
+  } else if ($("body").hasClass("page-homepage")){
+      setTimeout(start, 1000);
   }
   // setTimeout(start,300);
   setTimeout(function(){

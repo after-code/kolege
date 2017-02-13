@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height:14vh;
+  height:16vh;
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -25,14 +25,17 @@
     width: 132px;
     margin-left: 14px;
     margin-top: 21px;
+    top:0vh;
   }
 }
 .header__logo--anim{
   z-index: 12;
-  position: relative;
+  position: absolute;
   width: 100%;
   transform:scale(1);
-  top: 0vh;
+  display: block;
+  float: left;
+  top:7.7vh;
   transform-origin: top center;
   // left:10%;
 }
@@ -103,6 +106,9 @@
   background: white;
   z-index: 10;
   position: relative;
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 .o-back {
   // fill:#222;
@@ -133,19 +139,33 @@
 
 }
 .header__logo__background {
-  width:100%;
+  width:100vw;
   height: 100vh;
   bottom:0;
-  fill:#222;
+  background-color:#222;
   position: fixed;
   // display: none;
   z-index: 0;
+  // background-image: url('../../assets/img/volume.jpg');
+  // background-repeat: no-repeat;
   // display: none;
-  // opacity: 0;
-  transform:translateX(-100%);
-  -webkit-transform:translateX(-100%);
-  -ms-transform:translateX(-100%);
+  opacity: 1;
+  transform:translateX(-110%);
+  -webkit-transform:translateX(-110%);
+  -ms-transform:translateX(-110%);
   left: 0;
+  &:after {
+    content: "";
+    width: 100px;
+    background-size: 100px;
+    height: 100%;
+    position: relative;
+    background: url(../../assets/img/triangles.jpg);
+    left: 100%;
+    top: 0;
+    display: block;
+    background-size: 100px;
+  }
 }
 .mask {
   display: none;
