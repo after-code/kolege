@@ -43,11 +43,9 @@ function start(){
   // setTimeout(function(){
     setTimeout(function(){$background.velocity({translateX: ["0%","-110%"]},1250, [250,30], function(){
        $animation.css({background:"rgba(0,0,0,0)"});
-      //  setTimeout(function(){
-         $background.velocity({translateX: ["-110%","0%"]},1250, [250,30], function(){
+         $background.velocity({translateX: ["-110%","0%"]},1150, [250,30], function(){
            $animation.css({'display':"none"});
          });
-      //  },100)
     });},940);
   // },400);
   // setTimeout(function(){
@@ -65,7 +63,7 @@ function start(){
       // top:"7.7vh",
       opacity:0.2,
 
-    },1000, 'easeInOutCubic', function(){
+    },900, 'easeInOutCubic', function(){
         // $svg.velocity({translateY: "-297%"},1000, 'easeInOutCubic', function(){});
     });
       $svg.velocity({opacity:0}, 1200, 'easeInOutCubic');
@@ -73,9 +71,6 @@ function start(){
 
 
 }
-
-
-
   if($(window).width()<1024){
     if(!$("body").hasClass('about-page')){
       $(".about").click(function(e){

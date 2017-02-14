@@ -267,6 +267,7 @@ h1 {
   height: 100vh;
   bottom: 0;
   background-color: #222;
+  opacity: 0.671;
   position: fixed;
   z-index: 0;
   opacity: 1;
@@ -280,8 +281,7 @@ h1 {
     background-size: 100px;
     height: 100%;
     position: relative;
-    background: url(../../assets/img/triangles.jpg);
-    left: 100%;
+    left: 99%;
     top: 0;
     display: block;
     background-size: 100px; }

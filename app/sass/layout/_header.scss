@@ -143,6 +143,19 @@
   height: 100vh;
   bottom:0;
   background-color:#222;
+  // background: url("../../assets/img/back.jpg");
+  //
+  // /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,efc4c4+100 */
+  // background: rgb(0,0,0); /* Old browsers */
+  // background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(239,196,196,1) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(239,196,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(239,196,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#efc4c4',GradientType=1 ); /* IE6-9 */
+
+
+
+
+  opacity: 0.671;
   position: fixed;
   // display: none;
   z-index: 0;
@@ -160,8 +173,10 @@
     background-size: 100px;
     height: 100%;
     position: relative;
-    background: url(../../assets/img/triangles.jpg);
-    left: 100%;
+    // background: url(../../assets/img/square.jpg);
+
+
+    left: 99%;
     top: 0;
     display: block;
     background-size: 100px;
