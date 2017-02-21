@@ -153,6 +153,7 @@ h1 {
   position: absolute;
   z-index: 2;
   text-align: center;
+  height: 11vw;
   background: white; }
   @media (max-width: 700px) {
     .header {
@@ -183,11 +184,11 @@ h1 {
   width: 100%;
   display: block;
   float: left;
-  width: 30%;
-  left: 35%;
-  top: 37%;
-  opacity: 0;
-  transform: scale(0.11); }
+  width: 12%;
+  left: 44%;
+  top: 6.4vw;
+  opacity: 1;
+  transform: translateY(500%) scale(1); }
 
 .header__nav {
   float: right;
@@ -246,7 +247,8 @@ h1 {
   height: 100vh;
   background: white;
   z-index: 10;
-  position: relative; }
+  position: relative;
+  opacity: 0.3; }
   @media (max-width: 700px) {
     .header__animation {
       display: none; } }
